@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Past Events - Water World</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@700;900&family=Rajdhani:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../style.css">
+
+  <!-- Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-KZC48JMVLF"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-KZC48JMVLF');
+  </script>
+</head>
+<body>
+  <div class="container">
+    <header style="text-align:center;">
+      <div class="pipe-top"></div>
+      <h1 class="site-title" style="font-size: clamp(1.5rem, 7vw, 2.5rem);">WATER WORLD</h1>
+      <p class="site-subtitle">Past Events</p>
+      <div class="pipe-top"></div>
+    </header>
+
+    <div class="water-line"></div>
+
+    <main id="archive-container"></main>
+
+    <div id="loading" class="loading">
+      <div class="loading-spinner"></div>
+      <p>Loading...</p>
+    </div>
+
+    <div style="text-align:center; margin-top: 2rem;">
+      <a href="../" class="link-button" style="justify-content:center; max-width: 250px; margin: 0 auto;">
+        <span class="link-icon">\u2190</span>
+        <span class="link-name">Back to Current Event</span>
+      </a>
+    </div>
+
+    <footer class="footer">
+      <div class="water-line"></div>
+      <p class="footer-text">Water World &mdash; CSUSB</p>
+    </footer>
+  </div>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      fetch('../links.json')
+        .then(r => r.json())
+        .then(data => {
+          const container = document.getElementById('archive-container');
+          const loading = document.getElementById('loading');
+
+          if (!data.pastEvents || data.pastEvents.length === 0) {
+            container.innerHTML = `
+              <div style="text-align:center; padding: 2rem 0; color: var(--text-secondary);">
+                <p>No past events yet. Check back after our first event!</p>
+              </div>
+            `;
+            loading.classList.add('hidden');
+            return;
+          }
+
+          data.pastEvents.forEach(event => {
+            const section = document.createElement('section');
+            section.className = 'category-section';
+
+            const link = document.createElement('a');
+            link.href = event.url;
+            link.className = 'link-button';
+            link.innerHTML = `
+              <span class="link-icon">\u{1F4C5}</span>
+              <div class="link-text">
+                <span class="link-name">${event.name}</span>
+                <span class="link-desc">${event.date || ''}</span>
+              </div>
+              <span class="link-arrow">\u2192</span>
+            `;
+
+            section.appendChild(link);
+            container.appendChild(section);
+          });
+
+          loading.classList.add('hidden');
+        })
+        .catch(() => {
+          document.getElementById('loading').innerHTML =
+            '<p class="error-message">Failed to load events.</p>';
+        });
+    });
+  </script>
+</body>
+</html>

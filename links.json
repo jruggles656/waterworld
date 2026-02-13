@@ -1,0 +1,134 @@
+{
+  "event": {
+    "title": "WATER WORLD",
+    "subtitle": "Water Industry Career Expo",
+    "date": "Friday, February 20, 2026",
+    "time": "12:00 PM - 4:30 PM",
+    "location": "CSUSB - SMSU South"
+  },
+  "categories": [
+    {
+      "id": "speakers",
+      "title": "Guest Speakers",
+      "icon": "\ud83c\udf99\ufe0f",
+      "links": [
+        {
+          "name": "Juan Hernandez",
+          "description": "Assistant Operations Manager, Mesa Water",
+          "url": "https://www.mesawater.org",
+          "icon": "\ud83d\udca7"
+        },
+        {
+          "name": "Steven Hernandez",
+          "description": "CEO, Waterwise Pro",
+          "url": "https://www.waterwisepro.com",
+          "icon": "\ud83d\udd27"
+        }
+      ]
+    },
+    {
+      "id": "vendors",
+      "title": "Tabling Vendors",
+      "icon": "\ud83c\udfe2",
+      "links": [
+        {
+          "name": "Valley Water",
+          "description": "Water district serving the Valley region",
+          "url": "https://www.valleywater.org",
+          "icon": "\ud83c\udf0a"
+        },
+        {
+          "name": "Rialto Water",
+          "description": "Rialto water services",
+          "url": "https://www.rialtoca.gov",
+          "icon": "\ud83c\udf0a"
+        },
+        {
+          "name": "San Bernardino Municipal Water",
+          "description": "San Bernardino Municipal Water Department",
+          "url": "https://www.sbmwd.org",
+          "icon": "\ud83c\udf0a"
+        },
+        {
+          "name": "East Valley Water District",
+          "description": "Serving the East Valley community",
+          "url": "https://www.eastvalley.org",
+          "icon": "\ud83c\udf0a"
+        },
+        {
+          "name": "Riverside Public Utilities",
+          "description": "Riverside water services",
+          "url": "https://www.riversideca.gov/utilities",
+          "icon": "\ud83c\udf0a"
+        },
+        {
+          "name": "Waterwise Pro",
+          "description": "Water industry consulting and technology",
+          "url": "https://www.waterwisepro.com",
+          "icon": "\ud83d\udd27"
+        }
+      ]
+    },
+    {
+      "id": "event-info",
+      "title": "Event Info",
+      "icon": "\ud83d\udccb",
+      "links": [
+        {
+          "name": "RSVP on Coyote Connections",
+          "description": "Register for the event",
+          "url": "https://coyoteconnections.csusb.edu",
+          "icon": "\ud83d\udcdd"
+        },
+        {
+          "name": "CSUSB Career Center",
+          "description": "Career services and resources",
+          "url": "https://www.csusb.edu/career-center",
+          "icon": "\ud83c\udf93"
+        },
+        {
+          "name": "Event Location - SMSU South",
+          "description": "Santos Manuel Student Union South",
+          "url": "https://maps.google.com/?q=CSUSB+SMSU+South",
+          "icon": "\ud83d\udccd"
+        }
+      ]
+    },
+    {
+      "id": "stay-connected",
+      "title": "Stay Connected",
+      "icon": "\ud83d\udce9",
+      "links": [
+        {
+          "name": "Join Our Mailing List",
+          "description": "Get notified about future events",
+          "url": "https://docs.google.com/forms/d/e/1FAIpQLScwoZEvVPtTBphlzimGt0p2KJNbyjnDQG3P4WYrh-9kiqS4BA/viewform",
+          "icon": "\ud83d\udcec"
+        }
+      ]
+    }
+  ],
+  "sponsors": [
+    {
+      "name": "SVO",
+      "logo": "images/sponsors/svo.png",
+      "url": ""
+    },
+    {
+      "name": "VSCC",
+      "logo": "images/sponsors/vscc.png",
+      "url": ""
+    },
+    {
+      "name": "CSUSB Career Center",
+      "logo": "images/sponsors/csusb-career.png",
+      "url": "https://www.csusb.edu/career-center"
+    },
+    {
+      "name": "Waterwise Pro",
+      "logo": "images/sponsors/waterwisepro.png",
+      "url": "https://www.waterwisepro.com"
+    }
+  ],
+  "pastEvents": []
+}
