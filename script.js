@@ -157,12 +157,7 @@ function renderSponsors(sponsors) {
       item.appendChild(fallback);
     };
 
-    const name = document.createElement('span');
-    name.className = 'sponsor-name';
-    name.textContent = sponsor.name;
-
     item.appendChild(img);
-    item.appendChild(name);
     grid.appendChild(item);
   });
 
