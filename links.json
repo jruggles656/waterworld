@@ -15,7 +15,7 @@
         {
           "name": "Juan Hernandez",
           "description": "Assistant Operations Manager, Mesa Water",
-          "url": "https://www.mesawater.org",
+          "url": "https://www.linkedin.com/authwall?trk=gf&trkInfo=AQH6FDMl3hXMYQAAAZxZJweApNpvyuFedWtRAuWnv_stFPl9SwFJ8Y9IorZWEgNwuvvWXzaHZFHA4G9N152QtvgGSQlsvvMRoKi9eeR1d1Ek2Y75R8-4Q30vXovwV23h-q8Z5kE=&original_referer=&sessionRedirect=https%3A%2F%2Fwww.linkedin.com%2Fin%2Fjuan-hernandez-mim-8093a31bb%3Futm_source%3Dshare_via%26utm_content%3Dprofile%26utm_medium%3Dmember_ios",
           "icon": "\ud83d\udca7"
         },
         {
@@ -93,42 +93,6 @@
           "icon": "\ud83d\udccd"
         }
       ]
-    },
-    {
-      "id": "stay-connected",
-      "title": "Stay Connected",
-      "icon": "\ud83d\udce9",
-      "links": [
-        {
-          "name": "Join Our Mailing List",
-          "description": "Get notified about future events",
-          "url": "https://docs.google.com/forms/d/e/1FAIpQLScwoZEvVPtTBphlzimGt0p2KJNbyjnDQG3P4WYrh-9kiqS4BA/viewform",
-          "icon": "\ud83d\udcec"
-        }
-      ]
     }
-  ],
-  "sponsors": [
-    {
-      "name": "SVO",
-      "logo": "images/sponsors/svo.png",
-      "url": ""
-    },
-    {
-      "name": "VSCC",
-      "logo": "images/sponsors/vscc.png",
-      "url": ""
-    },
-    {
-      "name": "CSUSB Career Center",
-      "logo": "images/sponsors/csusb-career.png",
-      "url": "https://www.csusb.edu/career-center"
-    },
-    {
-      "name": "Waterwise Pro",
-      "logo": "images/sponsors/waterwisepro.png",
-      "url": "https://www.waterwisepro.com"
-    }
-  ],
-  "pastEvents": []
+  ]
 }
