@@ -141,7 +141,8 @@
     {
       "name": "CSUSB Career Center",
       "logo": "images/sponsors/csusb-career.png",
-      "url": "https://www.csusb.edu/career-center"
+      "url": "https://www.csusb.edu/career-center",
+      "hidden": true"
     },
     {
       "name": "Waterwise Pro",
