@@ -19,6 +19,12 @@
           "icon": "\ud83d\udca7"
         },
         {
+          "name": "Mesa Water District",
+          "description": "Juan Hernandez's organization",
+          "url": "https://www.mesawater.org",
+          "icon": "\ud83c\udf0a"
+        },
+        {
           "name": "Steven Hernandez",
           "description": "CEO, Waterwise Pro",
           "url": "https://www.waterwisepro.com",
@@ -93,6 +99,55 @@
           "icon": "\ud83d\udccd"
         }
       ]
+    },
+    {
+      "id": "jobs",
+      "title": "Job Opportunities",
+      "icon": "\ud83d\udcbc",
+      "links": [
+        {
+          "name": "BC Water Jobs",
+          "description": "Browse open positions in the water industry",
+          "url": "https://bcwaterjobs.com",
+          "icon": "\ud83d\udd0d"
+        }
+      ]
+    },
+    {
+      "id": "stay-connected",
+      "title": "Stay Connected",
+      "icon": "\ud83d\udce9",
+      "links": [
+        {
+          "name": "Join Our Mailing List",
+          "description": "Get notified about future events",
+          "url": "https://docs.google.com/forms/d/e/1FAIpQLScwoZEvVPtTBphlzimGt0p2KJNbyjnDQG3P4WYrh-9kiqS4BA/viewform",
+          "icon": "\ud83d\udcec"
+        }
+      ]
     }
-  ]
+  ],
+  "sponsors": [
+    {
+      "name": "SVO",
+      "logo": "images/sponsors/svo.png",
+      "url": ""
+    },
+    {
+      "name": "VSCC",
+      "logo": "images/sponsors/vscc.png",
+      "url": ""
+    },
+    {
+      "name": "CSUSB Career Center",
+      "logo": "images/sponsors/csusb-career.png",
+      "url": "https://www.csusb.edu/career-center"
+    },
+    {
+      "name": "Waterwise Pro",
+      "logo": "images/sponsors/waterwisepro.png",
+      "url": "https://www.waterwisepro.com"
+    }
+  ],
+  "pastEvents": []
 }
