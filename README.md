@@ -4,7 +4,7 @@
 
 A lightweight, JSON-driven linktree-style website for sharing event links with attendees. Built for GitHub Pages.
 
-🔗 **Live site:** [waterworld.sbs](https://waterworld.sbs)
+🔗 **Live site:** [waterworldhub.com](https://waterworldhub.com)
 
 ---
 
@@ -152,7 +152,7 @@ Analytics are already set up with measurement ID `G-KZC48JMVLF`.
 
 **To view analytics:**
 1. Go to [analytics.google.com](https://analytics.google.com)
-2. Select the waterworld.sbs property
+2. Select the waterworldhub.com property
 3. Check **Reports → Realtime** for live visitors
 4. Check **Reports → Engagement → Events** for link click data
 
@@ -305,7 +305,7 @@ Site updates automatically within 1-2 minutes.
 
 ## 🌐 Custom Domain DNS Setup
 
-For `waterworld.sbs`, add these DNS records at your domain registrar:
+For `waterworldhub.com`, add these DNS records at your domain registrar:
 
 | Type | Host | Value |
 |---|---|---|
@@ -315,7 +315,7 @@ For `waterworld.sbs`, add these DNS records at your domain registrar:
 | A | @ | 185.199.111.153 |
 | CNAME | www | YOUR_USERNAME.github.io |
 
-Then in GitHub repo **Settings → Pages → Custom domain**: enter `waterworld.sbs` and check **Enforce HTTPS**.
+Then in GitHub repo **Settings → Pages → Custom domain**: enter `waterworldhub.com` and check **Enforce HTTPS**.
 
 ---
 
