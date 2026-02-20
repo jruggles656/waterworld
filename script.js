@@ -6,6 +6,7 @@ document.addEventListener('DOMContentLoaded', () => {
     })
     .then(data => {
       renderHeader(data.event);
+      if (data.brochure) renderBrochure(data.brochure);
       renderCategories(data.categories);
       renderSponsors(data.sponsors);
       renderPastEvents(data.pastEvents);
@@ -36,6 +37,28 @@ function renderHeader(event) {
     div.innerHTML = `<span class="detail-icon">${item.icon}</span>${item.text}`;
     details.appendChild(div);
   });
+}
+
+// --- Brochure Video ---
+function renderBrochure(brochure) {
+  if (!brochure.video) return;
+
+  const container = document.getElementById('links-container');
+
+  const section = document.createElement('section');
+  section.className = 'brochure-section';
+
+  const video = document.createElement('video');
+  video.src = brochure.video;
+  video.className = 'brochure-video';
+  video.autoplay = true;
+  video.muted = true;
+  video.loop = true;
+  video.playsInline = true;
+  video.setAttribute('playsinline', '');
+
+  section.appendChild(video);
+  container.appendChild(section);
 }
 
 // --- Categories & Links ---

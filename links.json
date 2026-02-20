@@ -6,6 +6,9 @@
     "time": "12:00 PM - 4:30 PM",
     "location": "CSUSB - SMSU South"
   },
+  "brochure": {
+    "video": "videos/Brochure WaterWorld.mp4"
+  },
   "categories": [
     {
       "id": "speakers",
