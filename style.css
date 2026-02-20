@@ -244,9 +244,9 @@ body {
   width: 48px;
   height: 48px;
   object-fit: contain;
-  border-radius: 6px;
-  background: rgba(255, 255, 255, 0.08);
-  padding: 4px;
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.92);
+  padding: 5px;
 }
 
 .link-button.has-logo {
