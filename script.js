@@ -75,6 +75,11 @@ function createLinkButton(link) {
   a.rel = 'noopener noreferrer';
   a.className = 'link-button';
 
+  // Add logo class if vendor has a logo
+  if (link.logo) {
+    a.classList.add('has-logo');
+  }
+
   // Track clicks in Google Analytics
   a.addEventListener('click', () => {
     if (typeof gtag === 'function') {
@@ -86,9 +91,28 @@ function createLinkButton(link) {
     }
   });
 
-  const icon = document.createElement('span');
-  icon.className = 'link-icon';
-  icon.textContent = link.icon || '\u{1F517}';
+  // Use logo image if available, otherwise use emoji icon
+  if (link.logo) {
+    const logoImg = document.createElement('img');
+    logoImg.src = link.logo;
+    logoImg.alt = link.name;
+    logoImg.className = 'link-logo';
+    logoImg.loading = 'lazy';
+    // Fallback to emoji icon if image fails
+    logoImg.onerror = function() {
+      this.style.display = 'none';
+      const fallbackIcon = document.createElement('span');
+      fallbackIcon.className = 'link-icon';
+      fallbackIcon.textContent = link.icon || '\u{1F517}';
+      a.insertBefore(fallbackIcon, a.firstChild);
+    };
+    a.appendChild(logoImg);
+  } else {
+    const icon = document.createElement('span');
+    icon.className = 'link-icon';
+    icon.textContent = link.icon || '\u{1F517}';
+    a.appendChild(icon);
+  }
 
   const textDiv = document.createElement('div');
   textDiv.className = 'link-text';
@@ -109,7 +133,6 @@ function createLinkButton(link) {
   arrow.className = 'link-arrow';
   arrow.textContent = '\u2192';
 
-  a.appendChild(icon);
   a.appendChild(textDiv);
   a.appendChild(arrow);
 
