@@ -53,7 +53,7 @@ function renderBrochure(brochure) {
   video.className = 'brochure-video';
   video.autoplay = true;
   video.muted = true;
-  video.loop = true;
+  video.loop = false;
   video.playsInline = true;
   video.setAttribute('playsinline', '');
 
