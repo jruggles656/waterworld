@@ -149,7 +149,7 @@ function renderSponsors(sponsors) {
   heading.className = 'category-title sponsors-title';
   heading.innerHTML = `
     <span class="category-icon">\u{1F91D}</span>
-    <span class="category-title-text">Our Sponsors</span>
+    <span class="category-title-text">Community Partners</span>
   `;
   container.appendChild(heading);
 
