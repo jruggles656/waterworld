@@ -1,0 +1,17 @@
+# OS junk
+.DS_Store
+Thumbs.db
+
+# Editor files
+.vscode/
+.idea/
+
+# Security — never commit these
+.env
+.env.*
+*.pem
+*.key
+*.p12
+.gh-token
+credentials.json
+secrets/
